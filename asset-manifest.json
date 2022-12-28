@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LirazGanon/bitcoin/static/css/main.b10b5d2c.css",
-    "main.js": "/LirazGanon/bitcoin/static/js/main.cf3f1b08.js",
-    "static/js/787.887c022c.chunk.js": "/LirazGanon/bitcoin/static/js/787.887c022c.chunk.js",
-    "index.html": "/LirazGanon/bitcoin/index.html",
-    "main.b10b5d2c.css.map": "/LirazGanon/bitcoin/static/css/main.b10b5d2c.css.map",
-    "main.cf3f1b08.js.map": "/LirazGanon/bitcoin/static/js/main.cf3f1b08.js.map",
-    "787.887c022c.chunk.js.map": "/LirazGanon/bitcoin/static/js/787.887c022c.chunk.js.map"
+    "main.css": "/bitcoin/static/css/main.b10b5d2c.css",
+    "main.js": "/bitcoin/static/js/main.c4f69da3.js",
+    "static/js/787.887c022c.chunk.js": "/bitcoin/static/js/787.887c022c.chunk.js",
+    "index.html": "/bitcoin/index.html",
+    "main.b10b5d2c.css.map": "/bitcoin/static/css/main.b10b5d2c.css.map",
+    "main.c4f69da3.js.map": "/bitcoin/static/js/main.c4f69da3.js.map",
+    "787.887c022c.chunk.js.map": "/bitcoin/static/js/787.887c022c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b10b5d2c.css",
-    "static/js/main.cf3f1b08.js"
+    "static/js/main.c4f69da3.js"
   ]
 }
