@@ -1,0 +1,57 @@
+// Define color variables
+$primary-color: rgb(38, 0, 82);
+$secondary-color: rgb(175, 106, 255);
+
+// Create a responsive grid layout for the home page
+.home-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5em;
+  background-color: rgba(255, 255, 255, 0.808);
+
+  // Center the grid on the page
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+
+  // Add padding to the grid
+  padding: 1em;
+
+  // Use a box shadow to add depth to the grid
+  box-shadow: 0 0 5px 0px $secondary-color;
+
+  // Use media queries to change the layout at different breakpoints
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Style the avatar image
+img.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  // Use a gradient background for the avatar
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+}
+
+// Style the user's name
+h2 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: $primary-color;
+}
+
+// Style the user's wallet
+.user-wallet {
+  span {
+    font-weight: 700;
+    color: $secondary-color;
+  }
+}

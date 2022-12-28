@@ -1,0 +1,120 @@
+// Define color variables
+$primary-color: rgb(38, 0, 82);
+$secondary-color: rgb(175, 106, 255);
+$accent-color: rgb(246, 151, 255);
+
+// Create a modern, responsive header
+.app-header {
+  // Use a gradient background for the header
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  color: whitesmoke;
+  padding: 0 15px;
+
+  h1.title {
+    padding: 20px;
+    font-size: 18px;
+    width: fit-content;
+    margin: auto
+  }
+
+  .logo {
+    // Add some padding to the logo
+    padding: 1em 0;
+
+    // Use a modern font for the logo
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  nav {
+
+    a {
+
+      // Use a consistent font size for the navigation links
+      font-size: 20px;
+
+      // Add some margin between the links
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      // Use the accent color for the active link
+      &.active {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+
+  }
+
+  // Use media queries to change the layout at different breakpoints
+  @media (max-width: 992px) {
+
+    // Create a hamburger menu for mobile devices
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+
+      &:before,
+      &:after {
+        transition: 0.2s;
+      }
+
+
+
+      &.active:before {
+        transform: rotate(45deg) translateY(4.5px);
+        ;
+      }
+
+      &.active:after {
+        transform: rotate(-45deg) translateY(-5px);
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: whitesmoke;
+        margin-bottom: 5px;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: whitesmoke;
+        margin-top: 5px;
+      }
+    }
+
+    nav {
+      position: fixed;
+      flex-direction: column;
+      right: -100%;
+      bottom: 0;
+      width: 350px;
+      height: 90vh;
+      background: $primary-color;
+      z-index: 1;
+      transition: all 0.5s;
+      // Hide the navigation links on mobile devices
+
+      // Show the navigation links when the hamburger menu is clicked
+      &.active {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// Define color variables
+$primary-color: rgb(38, 0, 82);
+$secondary-color: rgb(175, 106, 255);
+$accent-color: #f00;
+
+// Create a modern, responsive contact details section
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  background-color: rgba(255, 255, 255, 0.808);
+
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0 0 13px 1px $secondary-color;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+
+  .info {
+    h2,
+    h3 {
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: 0.5em;
+    }
+    h3 span {
+      font-weight: 700;
+      color: $secondary-color;
+    }
+  }
+}

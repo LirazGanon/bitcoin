@@ -1,0 +1,67 @@
+// Define color variables
+$primary-color: rgb(38, 0, 82);
+$secondary-color: rgb(175, 106, 255);
+$accent-color: #f00;
+
+// Create a modern, responsive signup page
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: rgba(255, 255, 255, 0.808);
+
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  max-height: 300px;
+  width: fit-content;
+  box-shadow: 0 0 13px 1px $secondary-color;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    input {
+      font-size: 16px;
+      border: 1px solid $secondary-color;
+      border-radius: 4px;
+      padding: 0.5em;
+      width: 100%;
+
+      // Add a subtle shadow to the input fields
+      box-shadow: 0 0 2px #00000061;
+
+      // Animate the input fields when they are focused
+      &:focus {
+        outline: none;
+
+        box-shadow: 0 0 1px 1px $primary-color;      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      border: none;
+      box-shadow: 0 0 0 1px $primary-color;
+      color: $primary-color;
+      background-color: $secondary-color;
+      padding: 0.5em;
+      border-radius: 4px;
+      width: 100%;
+
+      // Animate the button when it is hovered
+      &:hover {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}

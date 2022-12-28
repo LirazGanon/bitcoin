@@ -1,0 +1,47 @@
+body {
+  // background-color: black;
+}
+
+//SETUP
+@import './setup/functions';
+@import './setup/mixins';
+@import './setup/variables';
+
+//BASICS
+@import './basics/helpers';
+@import './basics/base';
+@import './basics/layout';
+
+//COMPONENTS & VIEWS
+@import './cmps/app-header';
+@import './cmps/contact-list';
+@import './cmps/contact-preview';
+@import './cmps/contact-filter';
+@import './cmps/transfer-fund';
+@import './cmps/moves-list';
+@import './views/contact-page';
+@import './views/statistic-page';
+@import './views/home-page';
+@import './views/contact-details';
+@import './views/contact-edit';
+@import './views/signup-page';
+
+.main-app {
+
+  display: grid;
+  grid-template-columns: minmax(auto, 16px) 1fr minmax(auto, 16px);
+
+  > * {
+    grid-column: 2;
+  }
+
+  main {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  > footer {
+    background-color: #111;
+    color: white;
+  }
+}

@@ -1,0 +1,28 @@
+// Define color variables
+$primary-color: rgb(38, 0, 82);
+$secondary-color: rgb(175, 106, 255);
+$accent-color: #f00;
+
+// Create a modern, responsive contact list
+.contact-list {
+  width: 100%;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    gap: 2em;
+    padding: 0;
+
+    li.contact-item {
+      list-style: none;
+      height: 120px;
+      box-shadow: 0 0 13px 1px $secondary-color;
+      border-radius: 12px;
+
+      // Use a gradient background for the contact item
+      // background: linear-gradient(to bottom, $primary-color, $secondary-color);
+
+     
+    }
+  }
+}
